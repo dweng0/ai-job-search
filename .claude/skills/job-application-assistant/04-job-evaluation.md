@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** TypeScript, React, Node.js, Solidity, Python, WebSockets, PostgreSQL/TimescaleDB, DeFi/Web3, HFT trading systems, micro frontends, agentic engineering (Claude Code)
+**Moderate match areas:** Rust, AWS/Cloud, Docker, fintech enterprise architecture, API design
+**Weak match areas:** Mobile development, data science/ML, embedded systems, non-TypeScript backend languages (Go, Java, C++)
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** DeFi/Web3 engineering, institutional trading platform architecture, fintech frontend leadership (JPM), enterprise software (Hitachi)
+**Moderate:** Full-stack product engineering, DevOps/infrastructure, SDK development
+**Entry-level:** Pure data engineering, ML/AI engineering, mobile
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -47,10 +47,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
+- Fully remote: PASS
+- Remote with very occasional travel: FLAG (discuss with user)
+- Hybrid or on-site: FAIL (hard deal-breaker — do not proceed)
 - Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -63,19 +63,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Secure a Founding Engineer, Staff Engineer, or Principal Engineer role at a company that treats AI-augmented development as a core pillar
+- Work on high-stakes, high-performance systems (trading, DeFi, infrastructure, AI tooling)
+- Shape technical direction and architecture — not just execute
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: greenfield architecture, high-performance systems design, agentic/AI-augmented workflows, DeFi/trading infra, SDK development, technical strategy
+- Tasks that drain: pure maintenance, legacy bug-fixing without architectural scope, heavily bureaucratic environments
+- Non-task factors: leadership style (prefers founder/CTO-adjacent), remote-first culture, autonomy and ownership
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed — can afford to be selective; targeting the right fit, not just any offer
+- **Flexibility**: Remote only is non-negotiable
+- **Professional development**: Wants to stay at the frontier of agentic engineering and high-performance systems
 
 ### 6. Salary Benchmark (Optional)
 

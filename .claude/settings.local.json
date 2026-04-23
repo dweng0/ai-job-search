@@ -5,7 +5,25 @@
       "Bash(python3:*)",
       "Bash(python:*)",
       "Bash(curl:*)",
-      "Bash(bun:*)"
+      "Bash(bun:*)",
+      "WebSearch",
+      "WebFetch(domain:www.remoterocketship.com)",
+      "WebFetch(domain:www.ycombinator.com)",
+      "WebFetch(domain:cryptojobslist.com)",
+      "WebFetch(domain:www.workatastartup.com)",
+      "WebFetch(domain:web3.career)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:wellfound.com)",
+      "WebFetch(domain:www.defi.jobs)",
+      "WebFetch(domain:remotive.com)",
+      "WebFetch(domain:workinvirtual.com)",
+      "WebFetch(domain:weworkremotely.com)",
+      "WebFetch(domain:cryptocurrencyjobs.co)",
+      "WebFetch(domain:jobs.ashbyhq.com)",
+      "WebFetch(domain:job-boards.greenhouse.io)",
+      "WebFetch(domain:crypto.jobs)",
+      "WebFetch(domain:hnhiring.com)",
+      "WebFetch(domain:careers.uniswap.org)"
     ]
   }
 }

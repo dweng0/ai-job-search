@@ -1,70 +1,100 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Configured for Jason Martin-Smith — fully remote, UK-based, actively searching -->
+<!-- Note: The built-in CLI tools (.agents/skills/) target Danish job boards and are not relevant. -->
+<!-- Use the queries below directly in a browser or via the web search tool. -->
 
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+Primary (remote-first job boards):
+- **linkedin.com/jobs** — filter: Remote, United Kingdom or Worldwide
+- **wellfound.com** (formerly AngelList) — best for founding/staff engineer roles at startups
+- **remotive.com** — curated remote-only tech roles
+- **remote.co/jobs** — remote engineering roles
+- **weworkremotely.com** — remote engineering roles
+- **otta.com** — London/UK tech roles, supports remote filter
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Secondary (company career pages):
+- Direct Google searches: `site:jobs.lever.co "staff engineer" "remote" typescript`
+- Direct Google searches: `site:greenhouse.io "founding engineer" "remote" solidity`
+- Direct Google searches: `site:boards.greenhouse.io "principal engineer" "remote" typescript`
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+### Priority 1: Founding Engineer / Staff Engineer (strongest fit)
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+These match Jason's experience level and the 0-to-1 ownership he thrives in.
 
 ```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "founding engineer" remote typescript
+site:linkedin.com/jobs "staff engineer" remote typescript
+site:linkedin.com/jobs "founding engineer" remote solidity
+site:wellfound.com "founding engineer" typescript remote
+site:wellfound.com "staff engineer" typescript remote
+"founding engineer" typescript remote -site:indeed.com
+"staff engineer" typescript solidity remote
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: DeFi / Web3 Engineering (domain expertise)
 
-These match your domain expertise.
-
-```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+These match Jason's deep DeFi and smart contract background.
 
 ```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "lead engineer" DeFi remote
+site:linkedin.com/jobs "senior engineer" solidity typescript remote
+site:linkedin.com/jobs "staff engineer" web3 remote
+site:wellfound.com solidity typescript "lead engineer" remote
+"DeFi" "lead engineer" typescript remote
+"smart contract" "principal engineer" typescript remote
+"blockchain" "staff engineer" remote typescript
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Principal Engineer / Technical Lead (adjacent titles)
 
-Wider net for general technical roles.
+Broader senior individual contributor titles.
 
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "principal engineer" typescript remote
+site:linkedin.com/jobs "principal engineer" "trading" remote
+site:linkedin.com/jobs "technical lead" typescript remote "fintech"
+site:linkedin.com/jobs "lead engineer" "trading systems" remote
+"principal engineer" typescript remote fintech
+"technical lead" solidity typescript remote
+```
+
+### Priority 4: High-Performance Systems / Trading Infrastructure (domain pivot)
+
+For companies building trading tech outside of Web3 specifically.
+
+```
+site:linkedin.com/jobs "lead engineer" "trading platform" remote typescript
+site:linkedin.com/jobs "staff engineer" "low latency" remote
+site:linkedin.com/jobs "principal engineer" "real-time systems" remote
+"trading" "staff engineer" typescript remote
+"high frequency" "lead engineer" remote
+"websocket" "lead engineer" typescript remote fintech
+```
+
+### Priority 5: Agentic Engineering / AI-augmented tooling (emerging niche)
+
+For companies building developer tooling with AI at the core.
+
+```
+site:linkedin.com/jobs "staff engineer" "agentic" remote
+site:linkedin.com/jobs "founding engineer" "AI" "developer tools" remote
+site:wellfound.com "founding engineer" "AI tooling" remote
+"agentic" "staff engineer" typescript remote
+"developer tools" "founding engineer" typescript remote
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Jason is **remote-only**. All results must be:
+- Fully remote (PASS)
+- Remote-first with optional in-person (FLAG — confirm with user)
+- Hybrid or on-site (FAIL — discard immediately, do not present)
+
+No location preference otherwise — open globally as long as the role is remote.
 
 ## Date Filter
 
@@ -72,5 +102,9 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 
 ## Adapting Queries
 
-If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+If the user specifies a focus area:
+- `/scrape defi` → Priority 2 queries + custom DeFi-specific searches
+- `/scrape founding` → Priority 1 queries
+- `/scrape trading` → Priority 4 queries
+- `/scrape ai` → Priority 5 queries
+- `/scrape [company name]` → `site:[company-careers-url] engineer remote`

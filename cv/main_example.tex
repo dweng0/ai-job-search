@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV — Jason Martin-Smith
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: pdflatex main_example.tex
 
 \documentclass[11pt,a4paper,sans]{moderncv}
@@ -16,18 +15,18 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Jason Martin-Smith - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Jason}{Martin-Smith}
+\address{Bournemouth, United Kingdom}{}{}
+\phone[mobile]{07873183382}
+\email{jmartinsmith@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/jay-martin-smith-cto}{LinkedIn}, \href{https://github.com/dweng0}{GitHub (dweng0)}, \href{https://codecrafting.club}{codecrafting.club}}
 
 \begin{document}
 
@@ -38,7 +37,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Strategic technology leader with 10+ years building high-stakes systems at DeFi startups, institutional fintech, and enterprise scale. Currently Founding Systems Architect at Clearmatics, leading architecture for an institutional HFT platform processing 800+ trades/second with sub-80ms order matching. Specialises in TypeScript/Node.js systems, DeFi protocol engineering, and leveraging Claude Code and agentic workflows to accelerate 0-to-1 builds without sacrificing engineering rigour.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -48,19 +47,19 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Trading Systems \& Infrastructure}: Institutional HFT platform architecture, order book systems, WebSocket streaming, cross-exchange data aggregation, sub-80ms order matching at 800+ trades/second
 \vspace{1pt}
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Full-Stack TypeScript \& React}: Production DeFi applications, TypeScript SDKs, micro frontend architecture, real-time charting (Plotly), component-driven development
 \vspace{1pt}
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{DeFi \& Smart Contracts}: Solidity smart contract development, DeFi index platforms, cross-chain protocol architecture, wallet infrastructure
 \vspace{1pt}
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Agentic Engineering Workflows}: Leverage Claude Code and agentic capabilities to accelerate end-to-end engineering, maintaining institutional-grade rigour at startup velocity
 \vspace{1pt}
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Strategic Technical Leadership}: Define technical vision, collaborate with C-level on roadmap, establish engineering standards, knowledge transfer to 100+ engineers
 
 \end{itemize}
 
@@ -72,38 +71,60 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Clearmatics ---
+\item{\cventry{2023--Present}{Lead Engineer (Founding Systems Architect)}{Clearmatics}{London, UK}{}{\vspace{1pt}
+Led frontend architecture across 7 production DeFi applications and built institutional high-frequency trading platform. Define technical direction and infrastructure strategy for hybrid Web3/CEX trading ecosystem.
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
+    \item \textbf{Trading Platform Architecture:} Architected and delivered core trading platform from scratch, handling 800+ trades/second with sub-80ms order matching latency and sub-1s block confirmation
     \vspace{1pt}
-    \item [Achievement or responsibility 2]
+    \item \textbf{Time-Series Data Platform:} Architected PostgreSQL/TimescaleDB platform ingesting 1M+ datapoints/day with sub-300ms analytics queries and 1TB+ retention
     \vspace{1pt}
-    \item [Achievement or responsibility 3]
+    \item \textbf{Streaming Infrastructure:} Delivered performant backend achieving $\sim$12.5 ops/second with microsecond-level latency guarantees for institutional-grade performance
     \vspace{1pt}
-    \item [Achievement or responsibility 4]
+    \item \textbf{Charting Infrastructure:} Shipped reusable Plotly-based charting with live overlays supporting 7+ technical indicators, deployed across 4 applications
+    \vspace{1pt}
+    \item \textbf{Strategic Leadership:} Collaborated with C-level executives to define technical strategy and roadmap, aligning development with business goals
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Phuture Finance ---
+\item{\cventry{2021--2023}{Senior Engineer \& Technical Strategist}{Phuture Finance}{London, UK}{}{\vspace{1pt}
+Led architecture and strategic evolution of Phuture DeFi platform, delivering 5+ innovative products including DeFi index platforms and smart contract betting protocols.
 \begin{itemize}
-    \item [Achievement or responsibility 1]
+    \item \textbf{Full-Stack DeFi Development:} Delivered end-to-end components from Solidity smart contracts to React UI, ensuring product cohesion and cross-chain reliability
     \vspace{1pt}
-    \item [Achievement or responsibility 2]
+    \item \textbf{Developer SDK Creation:} Architected and maintained Phuture TypeScript SDK, adopted by external development teams for smart contract interactions and protocol integration
     \vspace{1pt}
-    \item [Achievement or responsibility 3]
+    \item \textbf{Wallet Infrastructure:} Redesigned wallet architecture from 3 to 8 provider support using pluggable architecture, significantly improving ecosystem compatibility
+    \vspace{1pt}
+    \item \textbf{Real-Time Trading Widget:} Built Crypto Index Widget enabling real-time minting/burning of index tokens with live price quotes, slippage analysis, and multi-asset withdrawal
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- J.P. Morgan ---
+\item{\cventry{2019--2021}{Senior Engineer}{J.P. Morgan}{London, UK}{}{\vspace{1pt}
+Led strategic frontend initiatives and architectural transformations within J.P. Morgan's investment technology division, delivering enterprise-scale fintech solutions.
 \begin{itemize}
-    \item [Achievement or responsibility 1]
+    \item \textbf{Microservices Architecture:} Decomposed monolithic liquidity platform into micro frontends powered by RESTful microservices, improving development velocity by 60\%
     \vspace{1pt}
-    \item [Achievement or responsibility 2]
+    \item \textbf{Treasury Control System:} Designed and delivered greenfield funding control tool with PWA capabilities and custom WebSocket framework---adopted by 5+ teams bank-wide
+    \vspace{1pt}
+    \item \textbf{Technology Migration Leadership:} Co-founded UX forum driving organisation-wide migration from AngularJS to React with TypeScript; established engineering standards for 100+ engineers
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Hitachi ---
+\item{\cventry{2014--2019}{Senior Software Engineer}{Hitachi}{Bournemouth, UK}{}{\vspace{1pt}
+Led enterprise digital transformation modernising Hitachi's software infrastructure through API-first architecture and modern development practices.
+\begin{itemize}
+    \item \textbf{API Modernisation:} Architected RESTful interfaces replacing legacy SOAP systems across enterprise storage product lines
+    \vspace{1pt}
+    \item \textbf{Internal Tooling:} Built Python API Manager with testing framework that reduced time-to-market by 40\%
+    \vspace{1pt}
+    \item \textbf{UI Modernisation:} Developed React and BackboneJS interfaces for enterprise backup and recovery tools
 \end{itemize}}}
 
 \end{itemize}
@@ -116,15 +137,11 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
+\item{\cventry{}{BSc Software Engineering}{Bournemouth University}{Bournemouth, UK}{}{}}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{}{Bachelor of Technology (BTech), Computer Software Engineering}{Carshalton College}{Surrey, UK}{}{}}
 
 \end{itemize}
 
@@ -135,27 +152,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item English (native).
 \end{itemize}
 
 % ============================================================

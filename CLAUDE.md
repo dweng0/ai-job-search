@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Jason Martin-Smith
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Jason Martin-Smith, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,74 +10,88 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Jason Martin-Smith
+- **Location:** Bournemouth, United Kingdom (Remote only — will not consider non-remote roles)
+- **Languages:** English (native)
+- **Status:** Currently employed at Clearmatics (actively and openly searching)
+- **LinkedIn headline:** "Lead Engineer | Systems Architect"
+- **Email:** jmartinsmith@gmail.com
+- **Phone:** 07873183382
+- **GitHub:** dweng0
+- **LinkedIn:** jay-martin-smith-cto
+- **Website:** codecrafting.club
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BSc Software Engineering** — Bournemouth University
+- **BTech Computer Software Engineering** — Carshalton College
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Lead Engineer (Founding Systems Architect)** (2023 - Present) - **Clearmatics** (London)
+  - Led frontend architecture across 7 production DeFi applications
+  - Built institutional HFT platform: 800+ trades/sec, sub-80ms order matching, sub-1s block confirmation
+  - Architected PostgreSQL/TimescaleDB platform: 1M+ datapoints/day, sub-300ms queries, 1TB+ retention
+  - Defined technical direction and infrastructure strategy for hybrid Web3/CEX trading ecosystem
+
+- **Senior Engineer & Technical Strategist** (2021 - 2023) - **Phuture Finance** (London)
+  - Led architecture of 5+ DeFi products including index platforms and smart contract protocols
+  - Built and maintained Phuture TypeScript SDK — adopted by external development teams
+  - Redesigned wallet architecture from 3 to 8 provider support using pluggable architecture
+
+- **Senior Engineer** (2019 - 2021) - **J.P. Morgan** (London)
+  - Decomposed monolithic liquidity platform into micro frontends — 60% dev velocity improvement
+  - Built Treasury Control System (PWA + custom WebSocket framework) — adopted by 5+ teams bank-wide
+  - Co-founded UX forum driving AngularJS → React/TypeScript migration across the organisation
+  - Delivered technical training to 100+ engineers
+
+- **Senior Software Engineer** (2014 - 2019) - **Hitachi** (Bournemouth)
+  - Modernised SOAP APIs to REST across enterprise storage product lines
+  - Built Python API Manager — reduced time-to-market by 40%
+  - Delivered React/BackboneJS UIs for enterprise backup and recovery tools
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** TypeScript, React, Node.js, Solidity, Python
+- **Secondary:** Rust, PostgreSQL, AWS/Cloud, Docker, Git
+- **Domain:** DeFi/Web3, Institutional Trading Systems, Fintech Infrastructure, Agentic Engineering
+- **Software:** Claude Code, TimescaleDB, Plotly, WebSockets, Cypress, Styleguidist
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- None listed
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None listed
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None listed
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Builder** — Thrives in 0-to-1 environments; energised by founding-stage problems and greenfield architecture
+- **Strategic-Technical** — Bridges C-level roadmap thinking with hands-on implementation; comfortable owning both
+- **AI-forward** — Treats Claude Code and agentic workflows as a core architectural pillar, not just tooling
+- **Strengths:** High-performance systems design, technical leadership, cross-functional communication, speed at startup velocity with institutional-grade rigour
+- **Growth areas:** Happy across IC and management tracks; open to any team structure
+- **Thrives in:** Remote-first teams, high autonomy, greenfield or early-stage products, high-stakes infrastructure
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Agentic engineering and AI-augmented development workflows
+- High-performance trading infrastructure and DeFi protocols
+- 0-to-1 product building; founding/staff-level ownership and influence
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Web3/DeFi: DeFi protocols, on-chain infrastructure, institutional crypto platforms
+- Fintech/Trading: HFT platforms, institutional trading tech, market infrastructure
+- AI-first: Companies treating AI-augmented development as a core pillar
+- Open to any sector for the right Founding/Staff/Principal Engineer role
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Not fully remote (hard no)
+- On-site or hybrid required
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
-- `.agents/skills/` - Job search CLI tools
+- `.agents/skills/` - Job search CLI tools (note: built-in CLI tools target Danish job boards — not relevant; use search-queries.md for remote-focused LinkedIn/Google searches instead)
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)

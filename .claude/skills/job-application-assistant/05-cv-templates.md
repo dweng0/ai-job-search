@@ -60,12 +60,14 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Founding Engineer / Staff Engineer roles:**
+> Strategic technology leader with 10+ years building high-stakes systems at DeFi startups, institutional fintech, and enterprise scale. Currently Founding Systems Architect at Clearmatics, leading architecture for an institutional HFT platform processing 800+ trades/second with sub-80ms order matching. I specialise in TypeScript/Node.js systems, DeFi protocol engineering, and leveraging Claude Code and agentic workflows to accelerate 0-to-1 builds without sacrificing engineering rigour. I am looking to join an early-stage team where I can own the technical direction and help build something that matters.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Principal Engineer / Technical Lead roles:**
+> Principal-calibre engineer with a decade of full-stack and systems experience spanning DeFi, institutional trading (J.P. Morgan), and enterprise infrastructure (Hitachi). At Clearmatics I define technical strategy for a hybrid Web3/CEX trading ecosystem and lead architecture across 7 production DeFi applications. I bring deep TypeScript and Solidity expertise, a track record of shipping high-performance infrastructure, and a strong belief in AI-augmented development — using Claude Code to maintain startup velocity with institutional-grade rigour.
+
+**For Web3 / DeFi-specific roles:**
+> DeFi engineering specialist with end-to-end experience from Solidity smart contracts to React UI and TypeScript SDK development. At Phuture Finance I delivered 5+ DeFi products including index platforms, smart contract betting protocols, and a TypeScript SDK now adopted by external teams. At Clearmatics I architect and lead delivery of institutional-grade DeFi trading infrastructure. I combine deep on-chain expertise with the systems thinking needed to build protocols that perform at scale.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

@@ -10,30 +10,33 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. Clearmatics HFT Trading Platform (Systems Architecture / 0-to-1 Build)
+**S:** Clearmatics needed to build a high-frequency institutional trading platform from scratch to power their hybrid Web3/CEX ecosystem. No existing infrastructure, tight performance requirements.
+**T:** As Founding Systems Architect, I owned the full technical architecture and delivery of the core trading platform.
+**A:** Designed the system from the ground up — order book engine, WebSocket streaming layer, charting infrastructure, and time-series data platform (PostgreSQL/TimescaleDB). Made key architectural decisions around latency targets, block confirmation windows, and data retention.
+**R:** Platform handles 800+ trades/second with sub-80ms order matching latency and sub-1s block confirmation. TimescaleDB platform ingests 1M+ datapoints/day with sub-300ms analytics queries and 1TB+ retention.
+**Use for:** "Tell me about a complex system you designed", "Describe a time you built something from scratch", "What's your most challenging technical achievement?"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Phuture TypeScript SDK (Technical Ownership / Developer Experience)
+**S:** Phuture Finance needed external developers to be able to interact with their DeFi smart contracts reliably. There was no SDK — developers were integrating directly with contracts, leading to fragile integrations.
+**T:** Design and build a TypeScript SDK that abstracts smart contract interactions and becomes the standard integration layer for the Phuture protocol.
+**A:** Architected the SDK with clean abstractions over contract ABIs, typed interfaces, and clear developer ergonomics. Maintained it alongside evolving protocol changes and documented it for external consumption.
+**R:** SDK is now adopted by external development teams as the primary way to interact with Phuture's contracts. Became a key piece of the protocol's ecosystem.
+**Use for:** "Tell me about a time you thought about developer experience", "Describe owning a product end-to-end", "Tell me about technical leadership"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. J.P. Morgan Treasury Control System (Delivery Under Constraints / Adoption)
+**S:** J.P. Morgan's internal treasury operations had no centralised funding control tooling — teams were working across fragmented systems with no unified PWA-capable tool.
+**T:** Design and deliver a greenfield treasury control system for internal operations, with real-time capabilities and enterprise adoption targets.
+**A:** Built the tool from scratch with PWA capabilities and a custom WebSocket framework for real-time updates. Worked closely with stakeholders to ensure the tool matched operational workflows.
+**R:** Tool was adopted by 5+ teams bank-wide — a strong result in a large organisation where internal tooling often fails to achieve cross-team adoption.
+**Use for:** "Tell me about a time your work had broad organisational impact", "Describe delivering under enterprise constraints", "Tell me about a project you're proud of"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. J.P. Morgan AngularJS → React Migration (Technical Leadership / Change Management)
+**S:** J.P. Morgan's investment technology division was running a large AngularJS codebase with growing maintenance burden and difficulty attracting engineers comfortable with modern tooling.
+**T:** Lead the organisation-wide migration to React with TypeScript, including establishing new engineering standards and gaining buy-in across teams.
+**A:** Co-founded a UX forum that drove consensus and coordination across the division. Established engineering standards for linting, component reuse, and development workflows. Delivered technical presentations on component-driven development and testing to 100+ engineers.
+**R:** Organisation-wide adoption of React/TypeScript. Knowledge transfer to 100+ engineers. Established long-lasting engineering standards across the division.
+**Use for:** "Tell me about leading change in a large organisation", "Describe a time you influenced without authority", "Tell me about mentoring or knowledge transfer"
 
 ## Common Tough Questions
 
